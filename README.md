@@ -15,6 +15,10 @@ Navigate to [`localhost:4000/api/books`](http://localhost:4000/api/books) to see
 
 Use curl to add more books with the following command: 
 
-```curl -X POST -H "Content-Type: application/json" \
-    -d '{"book": {"title": "Whale huntng", "isbn": "9-2134q523-23532-235", "price": 11.10, "description": "jobs left for less boring people", "authors": ["Alfred Neuman", "Abraham Lincoln"] }}' \
-    http://localhost:4000/api/books```
+```
+curl -X POST -H "Content-Type: application/json" \
+    -d '{"book": {"title": "Whale huntng", "isbn": "9-2134q523-23532-235", \
+    			  "price": 11.10, "description": "jobs left for less boring people",\ 
+    			  "authors": ["Alfred Neuman", "Abraham Lincoln"] }}' \
+    http://localhost:4000/api/books
+    ```
